@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name='description' content='This is my portfolio'>
+	<title>Gideon</title>
+	<link rel="stylesheet" type="text/css" href="portfolio-style.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Varela Round">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arizonia">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Great Vibes">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Code">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".homeButton").click(function(){
+				$("html").animate({scrollTop: $(".bg-image").position().top}, 1200);
+			})
+
+			$(".projectsButton").click(function(){
+				$("html").animate({scrollTop: $(".white-space-container").position().top}, 1200); 
+			})
+
+			$(".aboutButton").click(function(){
+				$("html").animate({scrollTop: $(".about-container").position().top}, 1200);
+			})
+
+			$(".contactButton").click(function(){
+				$("html").animate({scrollTop: $(".contact-container").position().top}, 1200);
+			})
+
+			$(document).scroll(function(){
+				var s = $(document).scrollTop(); 
+				$(".bg-image").css("background-position", "0px "+(s*0.6)+"px");
+			})
+
+			$(document).scroll(function(){
+				var s = $(document).scrollTop();
+				if (s > 1600) {	
+					$(".bg-image2").css("background-position", "0px "+(s*0.3)+"px"); 
+				}
+				if (s > 2700) {
+					$(".bg-image2").css("background-position", "0px "+(s*0.7)+"px"); 
+				}
+
+				var objectName = {
+					age: 18,
+					furColor: "grey",
+					likes: ['catnip', 'milk'],
+					birthday: {month: 7, day: 17, year: 1994}
+				};
+			})
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="bg-image">
+			<div class="nav-bar-container">
+				<div class="nav-bar">
+					<ul>
+						<li><a class="homeButton" href="#">HOME</a></li>
+						<li>|</li>
+						<li><a class="projectsButton" href="#">PROJECTS</a></li>
+						<li>|</li>
+						<li><a class="aboutButton" href="#">ABOUT</a></li>
+						<li>|</li>
+						<li><a class="contactButton" href="#">CONTACT</a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="header-container">
+				<h1 class="topHeader" onclick="abc()">HELLO</h1>	
+				<h2 class="midHeader">WELCOME TO</h2>
+				<h2 class="bottomHeader"><span>Gideon's</span> PORTFOLIO</h2>
+			</div>
+			
+			<div class="link-container">
+				<a href="https://www.twitter.com" target="_blank"><div class="twitterLink"></div></a>
+				<a href="https://www.instagram.com/peterpuppybarker" target="_blank"><div class="instagramLink"></div></a>
+				<a href="https://www.github.com/gideonlee" target="_blank"><div class="githubLink"></div></a>
+				<a href="https://www.linkedin.com" target="_blank"><div class="linkedinLink"></div></a>
+				<a href="https://www.facebook.com" target="_blank"><div class="facebookLink"></div></a>
+				<a href="https://www.freecodecamp.com/gideonlee" target="_blank"><div class="freeCodeCampLink"></div></a>
+			</div>	
+		</div>
+		<div class="white-space-container">
+			<h1><span>MY</span> PROJECTS</h1>
+		</div>
+
+		<div class="projects-container">
+			<div class="top-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+
+			<div class="mid-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+			
+			<div class="bot-row">
+				<a href=""><div class="left projects"></div></a>
+				<a href=""><div class="mid projects"></div></a>
+				<a href=""><div class="right projects"></div></a>
+			</div>
+		</div>
+
+		<div class="bg-image2"> 
+			<div class="parallax-container">
+				
+			</div>
+
+			<div class="about-container">
+				<h1>ABOUT <span>ME</span></h1>
+				<div class="pic-container">
+					
+				</div>
+				<div class="text-container">
+					<p>In 2016, I decided to change careers and pursue learning front-end and back-end web development.</p>
+					<p>At first, I started taking free online code camps such as Free Code Camp.</p>
+					<p>However, as I progressed, I realized I needed to take a <span class="text-primary">more concentrated effort</span> and signed up for a coding bootcamp.</p>
+				</div>
+			</div>
+
+			<div class="parallax2-container">
+
+			</div>	
+
+			<div class="contact-container">
+				<h1><span>CONTACT</span> ME</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
